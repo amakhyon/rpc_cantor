@@ -66,6 +66,7 @@ cantor_1(char *host)
         for(i=0; i < pairBackward->pairs_len; i++){
             printf("\n pair %d are %d %d",i+1,pairBackward->pairs_val[i].x,pairBackward->pairs_val[i].y);
         }
+        printf("\n");
 	    if (pairBackward == (pairs *) NULL) {
 		    clnt_perror (clnt, "call failed");
 	    }
