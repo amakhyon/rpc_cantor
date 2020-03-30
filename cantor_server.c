@@ -34,7 +34,7 @@ cantorbackward_1_svc(results *results, struct svc_req *rqstp)
     result.pairs_val = (pairs *) malloc(sizeof(pairs) * result.pairs_len );
     for(i=0; i < results->results_len; i++){
         z = results->results_val[i];
-        w =  (sqrt(z+1) -1 ) /2;
+        w =  (sqrt(8*z+1) -1 ) /2;
         t = ((w*w) + w ) /2;
         y = z -t ;
         x = w -y;
